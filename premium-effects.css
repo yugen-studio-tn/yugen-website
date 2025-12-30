@@ -1,0 +1,88 @@
+/* ============================================
+   PREMIUM HOVER EFFECTS & INTERACTIONS
+   ============================================ */
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card hover effects */
+.project-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-card .media-container {
+    overflow: hidden;
+}
+
+.project-card:hover .media-placeholder img {
+    transform: scale(1.05);
+    transition: transform 0.6s ease;
+}
+
+/* Button hover effects */
+.btn-primary,
+.submit-btn {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 27, 109, 0.4);
+}
+
+/* Navbar scroll effect */
+.navbar {
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Link hover effects */
+a {
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* GET IN TOUCH hover */
+.get-in-touch-graphic a:hover h2 {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+/* Social icons hover */
+.social-bar a {
+    transition: all 0.3s ease;
+}
+
+.social-bar a:hover {
+    transform: translateY(-3px) scale(1.1);
+    color: #FF1B6D;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Image loading effect */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+    opacity: 0;
+}

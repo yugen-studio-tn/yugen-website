@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Available - YUGEN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="premium-effects.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #F3EFE0;
+            font-family: 'Tungsten', sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .message-container {
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: clamp(60px, 10vw, 120px);
+            line-height: 0.9;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+        }
+
+        .pink {
+            color: #FF1B6D;
+        }
+
+        p {
+            font-family: 'Inter', sans-serif;
+            /* Using fallback/system font if Inter isn't loaded explicitly, but matches style */
+            font-size: 18px;
+            opacity: 0.7;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .btn-home {
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 15px 40px;
+            color: #F3EFE0;
+            text-decoration: none;
+            font-size: 24px;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-home:hover {
+            background-color: #FF1B6D;
+            border-color: #FF1B6D;
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="message-container">
+        <h1>SORRY<br><span class="pink">NOT AVAILABLE YET</span></h1>
+        <p>We are not available yet on this platform</p>
+        <a href="index.html" class="btn-home">GO BACK HOME</a>
+    </div>
+
+    <script src="cursor.js"></script>
+    <!-- Assuming cursor.js might be used if copied, but safe to omit or include if present -->
+</body>
+
+</html>

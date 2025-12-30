@@ -1,0 +1,8 @@
+  </footer>
+
+  <!-- Scripts -->
+  <script src="splash.js"></script>
+  <script src="scroll-animations.js"></script>
+</body>
+
+</html>

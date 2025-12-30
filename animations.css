@@ -1,0 +1,35 @@
+/* SCROLL-TRIGGERED ANIMATIONS */
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Specific animation styles for different elements */
+.section-title.animate-on-scroll {
+    transform: translateX(-50px);
+}
+
+.section-title.animated {
+    transform: translateX(0);
+}
+
+.project-meta.animate-on-scroll {
+    transition-delay: 0.2s;
+}
+
+/* Smooth transitions for all interactive elements */
+.card-link {
+    transition: transform 0.3s ease;
+}
+
+.card-link:hover .media-container {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
