@@ -16,7 +16,8 @@
 .page-title {
     font-family: 'Tungsten', Arial, sans-serif;
     font-size: clamp(40px, 8vw, 100px);
-    font-weight: 700;
+    font-weight: 900;
+    /* Tungsten Black */
     color: #000000;
     margin: 0;
     padding: 0 40px;
@@ -212,13 +213,13 @@
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .masonry-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .masonry-item img,

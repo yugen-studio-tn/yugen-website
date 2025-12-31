@@ -1,5 +1,40 @@
 /* EXACT FIGMA REPLICA STYLES */
 
+/* ========================================
+   TUNGSTEN FONT FACES
+   ======================================== */
+@font-face {
+  font-family: 'Tungsten';
+  src: url('assets/fonts/Tungsten-Font/OTF/Tungsten-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('assets/fonts/Tungsten-Font/OTF/Tungsten-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('assets/fonts/Tungsten-Font/OTF/Tungsten-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('assets/fonts/Tungsten-Font/OTF/Tungsten-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +43,7 @@
 
 body {
   font-family: 'Tungsten', 'Arial', sans-serif;
+  font-weight: 400;
   background-color: #F5F1E8;
   /* Light beige background */
   color: #000000;
@@ -133,7 +169,8 @@ body {
 
 .about-text .strike {
   text-decoration: line-through;
-  font-weight: 600;
+  font-weight: 300;
+  /* Tungsten Light */
 }
 
 /* SECTION TITLES - Black text on beige background */
@@ -216,7 +253,7 @@ body {
 }
 
 .media-placeholder.green {
-  background-color: #00FF00;
+  background-color: #000000;
 }
 
 .media-placeholder.yellow {
@@ -644,5 +681,51 @@ body {
 
   .details-container {
     padding: 0 20px;
+  }
+}
+
+/* ========================================
+   WHATSAPP FLOATING BUTTON
+   ======================================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  background-color: #333333;
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float svg {
+    width: 24px;
+    height: 24px;
   }
 }
