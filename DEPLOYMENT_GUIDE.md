@@ -35,6 +35,7 @@ If you are using the contact form, ensure you have set up the `access_key` in `c
 ## Option 2: GitHub Pages
 **Best for:** If you want version control or plan to update the code frequently.
 
+### 1. Initial Setup
 1.  **Create a GitHub Account**: [github.com](https://github.com).
 2.  **Create a New Repository**:
     *   Click `+` → "New repository".
@@ -47,9 +48,26 @@ If you are using the contact form, ensure you have set up the `access_key` in `c
     *   Go to **Settings** → **Pages**.
     *   Select Source: `Deploy from a branch`, Branch: `main` / `root`.
     *   Click **Save**.
-5.  **Custom Domain**:
+5.  **Custom Domain & DNS (Namecheap Example)**:
     *   In **Settings** → **Pages**, enter your custom domain under "Custom domain".
-    *   Configure DNS records at your registrar (CNAME `www` to `yourusername.github.io`).
+    *   **Login to Namecheap** -> Domain List -> Manage -> Advanced DNS.
+    *   **Add CNAME Record**: Host: `www`, Value: `yourusername.github.io`.
+    *   **Add 4 A Records**: Host: `@`, Values:
+        *   `185.199.108.153`
+        *   `185.199.109.153`
+        *   `185.199.110.153`
+        *   `185.199.111.153`
+    *   Back in GitHub, check **Enforce HTTPS** (Wait 30mins if needed).
+
+### 2. How to Update Your Site Later
+When you make changes to your files (like new text or images) and want to update the live site:
+
+1.  Go to your GitHub Repository page.
+2.  Click the **"Add file"** button (top right of the file list) → Select **"Upload files"**.
+3.  Drag and drop your **new/updated files** into the box.
+4.  Write a small note in "Commit changes" (e.g., "Updated contact info").
+5.  Click the green **Commit changes** button.
+6.  **Done!** GitHub will automatically detect the changes and update your live site in 1-2 minutes.
 
 ---
 

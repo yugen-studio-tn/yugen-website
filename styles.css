@@ -112,6 +112,14 @@ body {
   color: #000000;
 }
 
+.about-title-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
 .about-text {
   font-size: clamp(24px, 3vw, 48px);
   font-weight: 600;
@@ -395,6 +403,14 @@ body {
   /* Will be replaced with image/gif later */
 }
 
+.footer-graphic-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+}
+
 .social-bar a {
   color: #FFFFFF;
   transition: opacity 0.3s ease;
@@ -430,7 +446,8 @@ body {
 
 @media (max-width: 768px) {
   .section-title {
-    padding: 40px 5%;
+    padding: 20px 5%;
+    /* Reduced from 40px for tighter spacing */
   }
 
   .section-title h2 {
@@ -438,18 +455,28 @@ body {
   }
 
   .card-frame {
-    padding: 20px 5%;
-    /* Maintain horizontal padding */
+    padding: 20px 0;
+    /* Remove horizontal padding for full-width */
   }
 
   .project-card {
-    padding: 0 5% 40px 5%;
+    padding: 0;
+    /* Remove all padding */
+    margin-bottom: 0;
+    /* Remove gaps between cards */
+  }
+
+  .media-container {
+    padding: 0 5%;
+    /* Add horizontal margins to media rectangles */
   }
 
   .project-meta {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
+    padding: 0 5%;
+    /* Add padding to meta */
   }
 
   .social-bar {
@@ -468,6 +495,11 @@ body {
     aspect-ratio: 3 / 1;
     /* Adjust ratio for mobile */
   }
+
+  .project-title {
+    right: calc(5% + 15px);
+    /* Account for container padding + margin */
+  }
 }
 
 @media (max-width: 480px) {
@@ -482,7 +514,8 @@ body {
   .project-title {
     font-size: 30px;
     bottom: 10px;
-    right: 10px;
+    right: calc(5% + 10px);
+    /* Account for container padding on small screens */
   }
 
   .social-bar {
